@@ -22,10 +22,11 @@ setInterval(function(){
                 window.web3.instance = web3.eth.contract(abi).at(contractAddress);
                 window.account = web3.eth.accounts[0];
                 window.isProvided = true;
-                alert("login!");
+                console.log("login ..." + window.account);
             }
             else {
-                alert("logout!");
+                window.account = web3.eth.accounts[0];
+                console.log("logout ..." + window.account);
             }
         }
 }, 1000)
