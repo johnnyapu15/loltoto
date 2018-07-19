@@ -38,6 +38,7 @@ window.onload = function () {
               //   //alert("TXID Copy to clipboard: Ctrl+C, Enter\n" + r);
                 
               // });
+              tournamentId = document.getElementById('tournament_id').value;
               alert("T_ID: " + tournamentId + ", team: " + this.value);
               document.getElementById('tournament_id').value = "";
               this.parentNode.close();
