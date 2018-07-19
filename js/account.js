@@ -20,15 +20,14 @@ setInterval(function() {
         }
 
     });
+    var bettingModalBtns = document.querySelectorAll('.betting_modal');
 
-    if (document.querySelectorAll('.betting_modal').style.visibility == "") {
-
-      document.querySelectorAll('.betting_modal').style.visibility = "visible";
-      document.getElementById('betting_form').style.visibility = "visible";
-      document.getElementById('receive_modal').style.visibility = "visible";
-      document.getElementById('receive_form').style.visibility = "visible";
-
+    for (var i = 0; i < bettingModalBtns.length; i++){
+      bettingModalBtns[i].style.visibility = "visible";
     }
+    document.getElementById('betting_form').style.visibility = "visible";
+    document.getElementById('receive_modal').style.visibility = "visible";
+    document.getElementById('receive_form').style.visibility = "visible";
 
     web3.eth.getCoinbase(function(e, address) {
 
