@@ -17,7 +17,7 @@ window.onload = function () {
     //여기서 어떤 토너먼트를 선택했는지 저장해야한다.
     bettingModalBtns[i].addEventListener('click', function(e) {
     e.preventDefault();
-    tournamentId = this.value;
+    document.getElementById('tournament_id').value = this.value;
     bettingModal.showModal();
     });
   }
