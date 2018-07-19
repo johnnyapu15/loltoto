@@ -19,12 +19,19 @@ window.addEventListener('load', function(){
 setInterval(function(){
     if (loginBoolean){
         if (web3.eth.accounts[0] !== window.account){
-            window.account = web3.eth.accounts[0];
-            window.isProvided = true;
-            alert("login!");
+            console.log(web3.eth.accounts[0]);
+            if (web3.eth.accounts[0] !== 0){
+                window.web3.instance = web3.eth.contract(abi).at(contractAddress);
+                window.account = web3.eth.accounts[0];
+                window.isProvided = true;
+                alert("login!");
+            }
+            else {
+                alert("logout!");
+            }
         }
         else {
-            window.isProvided = false;
+            //window.isProvided = false;
         }
     }
 }, 1000)

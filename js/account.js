@@ -2,28 +2,12 @@ var blockNumber = 0;
 var savedAddress = "";
 var savedBalances = 0;
 
-// function addJavascript(jsname) {
-
-// 	var th = document.getElementsByTagName('head')[0];
-
-// 	var s = document.createElement('script');
-
-// 	s.setAttribute('type','text/javascript');
-
-// 	s.setAttribute('src',jsname);
-
-// 	th.appendChild(s);
-
-// }
-
-// addJavascript('js/setProvider.js');
-
 setInterval(function() {
 
   var message;
   console.log(window.isProvided);
   if (window.isProvided){  
-    message = web3.eth.contract(abi).at(contractAddress);
+    //window.web3.instance = web3.eth.contract(abi).at(contractAddress);
     //로그인시 새 메세지있나 확인.
     /*
     message.getMsg(function(e,r) {
