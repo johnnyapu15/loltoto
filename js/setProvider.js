@@ -7,4 +7,7 @@ window.addEventListener('load', function(){
         window.web3 = new Web3(web3.currentProvider);
         window.isProvided = true;
     }
+    else {
+        window.isProvided = false;
+    }
 })
