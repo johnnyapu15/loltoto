@@ -14,10 +14,10 @@ window.onload = function () {
 
   // Setup Event Listeners
   for (var i = 0; i < bettingModalBtns.length; i++){
+    //여기서 어떤 토너먼트를 선택했는지 저장해야한다.
     bettingModalBtns[i].addEventListener('click', function(e) {
     e.preventDefault();
-        //여기서 어떤 토너먼트를 선택했는지 저장해야한다.
-    tournamentId = bettingModalBtns[i].value;
+    tournamentId = this.value;
     bettingModal.showModal();
     });
   }
