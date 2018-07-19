@@ -30,8 +30,7 @@ window.onload = function () {
 
   for (var i = 0; i < bettingBtns.length; i++) {
     bettingBtns[i].addEventListener('click', function(e) {
-            document.getElementById('tournament_id').value = tournamentId;
-            var team = bettingBtns[i].value;
+            //document.getElementById('tournament_id').value = tournamentId;
             //if(tournamentId.search(/0x[a-zA-Z0-9]{40}/) != -1) {
 
               // window.contractInstance.sendMsg(address, document.getElementById('receive_contents').value, {gasPrice:web3.toWei(2, 'Gwei')}, function(e,r) {
@@ -39,7 +38,7 @@ window.onload = function () {
               //   //alert("TXID Copy to clipboard: Ctrl+C, Enter\n" + r);
                 
               // });
-              alert(tournamentId + ", " + team);
+              alert("T_ID: " + tournamentId + ", team: " + bettingBtns[i].value);
               document.getElementById('tournament_id').value = "";
               this.parentNode.close();
 
