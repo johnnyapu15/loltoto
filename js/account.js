@@ -21,7 +21,7 @@ var savedBalances = 0;
 setInterval(function() {
 
   var message;
-
+  console.log(window.isProvided);
   if (window.isProvided){  
     message = web3.eth.contract(abi).at(contractAddress);
     //로그인시 새 메세지있나 확인.

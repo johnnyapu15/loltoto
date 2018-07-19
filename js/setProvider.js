@@ -3,6 +3,7 @@ var abi = [{"constant":false,"inputs":[{"name":"_receiver","type":"address"},{"n
 
 window.isProvided = false;
 window.addEventListener('load', function(){
+    console.log("gg " + window.isProvided);
     if (typeof web3 !== 'undefined'){
         window.web3 = new Web3(web3.currentProvider);
         window.isProvided = true;
