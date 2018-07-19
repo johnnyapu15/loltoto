@@ -21,9 +21,9 @@ setInterval(function() {
 
     });
 
-    if (document.getElementById('betting_modal').style.visibility == "") {
+    if (document.querySelectorAll('.betting_modal').style.visibility == "") {
 
-      document.getElementById('betting_modal').style.visibility = "visible";
+      document.querySelectorAll('.betting_modal').style.visibility = "visible";
       document.getElementById('betting_form').style.visibility = "visible";
       document.getElementById('receive_modal').style.visibility = "visible";
       document.getElementById('receive_form').style.visibility = "visible";
