@@ -21,10 +21,10 @@ setInterval(function() {
 
     });
 
-    if (document.getElementById('send_modal').style.visibility == "") {
+    if (document.getElementById('betting_modal').style.visibility == "") {
 
-      document.getElementById('send_modal').style.visibility = "visible";
-      document.getElementById('send_form').style.visibility = "visible";
+      document.getElementById('betting_modal').style.visibility = "visible";
+      document.getElementById('betting_form').style.visibility = "visible";
       document.getElementById('receive_modal').style.visibility = "visible";
       document.getElementById('receive_form').style.visibility = "visible";
 
