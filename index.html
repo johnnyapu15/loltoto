@@ -22,19 +22,22 @@
                 </div>
         </div>
 
-        <button id="send_modal">
-            <img id="send_modal_img" src="svg/paper-plane.svg"/>
+        
+        <button class="betting_modal">
+            <img id="betting_modal_img" src="svg/paper-plane.svg"/>
         </button>
 
-        <dialog id="send_form">
-            <span id="send_title">ETH Smart Contract Messanger</span>
-            <button class="send_form_close">
-                <img id="send_form_close_img" src="svg/close.svg"/>
+        <dialog id="betting_form">
+            <span id="betting_title">#TOURNAMENT DETAIL</span>
+            <button class="betting_form_close">
+                <img id="betting_form_close_img" src="svg/close.svg"/>
             </button>
-            <input id="receive_address" type="text" placeholder="To Address" maxlength="42">
-            <textarea id="receive_contents" type="text" placeholder="Message Contents" style="resize:none"></textarea>
-            <button class="send">
-                <img id="send_img" src="svg/paper-plane-colored.svg"/>
+            <input id="tournament_id" type="text" placeholder="Tournament ID" maxlength="42">
+            <button class="betting" value="team_a">
+                <img id="betting_to_team_A_img" src="svg/paper-plane-colored.svg"/>
+            </button>
+            <button class="betting" value="team_b">
+                <img id="betting_to_team_B_img" src="svg/paper-plane-colored.svg"/>
             </button>
         </dialog>
 

@@ -30,7 +30,7 @@ a {
  Message Form Style
 */
 
-#send_modal, #receive_modal {
+.betting_modal, #receive_modal {
 
     display: inline-block;
     background: #354863;
@@ -52,7 +52,7 @@ a {
 
 }
 
-#send_modal_img, #send_img{
+#betting_modal_img, #betting_img{
 
     position:relative;
 
@@ -62,7 +62,7 @@ a {
 }
 
 
-#send_modal:hover, #send_modal:focus, #receive_modal:hover, #receive_modal:focus {
+.betting_modal:hover, #betting_modal:focus, #receive_modal:hover, #receive_modal:focus {
 
   background:#446CB3;
   cursor: pointer;
@@ -71,14 +71,14 @@ a {
 
 }
 
-#send_modal:active, #receive_modal:active {
+.betting_modal:active, #receive_modal:active {
 
   opacity: 1;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
 
 }
 
-#send_form, #receive_form {
+#betting_form, #receive_form {
 
   background:#354863;
   width:500px;
@@ -100,14 +100,14 @@ a {
 
 }
 
-#send_form::backdrop, #receive_form::backdrop {
+#betting_form::backdrop, #receive_form::backdrop {
 
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-#send_title, #receive_title {
+#betting_title, #receive_title {
 
     font-family:sans-serif;
     font-size: 1.35em;
@@ -126,7 +126,7 @@ a {
     transform: translateX(-50%);
 }
 
-.send_form_close {
+.betting_form_close {
 
     background:transparent;
 
@@ -144,7 +144,7 @@ a {
 
 }
 
-#send_form_close_img {
+#betting_form_close_img {
 
     position:relative;
     width:100%;
@@ -153,7 +153,7 @@ a {
 
 }
 
-#send_address, #receive_address {
+#betting_address, #receive_address {
 
     background:#fafafa;
     color:#354863;
@@ -173,7 +173,7 @@ a {
 
 }
 
-#send_contents, #receive_contents {
+#betting_contents, #receive_contents {
 
     background:#fafafa;
     color:#354863;
@@ -196,7 +196,7 @@ a {
 
 }
 
-.send, .receive_form_close {
+.betting, .receive_form_close {
 
     display: inline-block;
     background: white;

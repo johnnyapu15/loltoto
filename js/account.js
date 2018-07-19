@@ -9,8 +9,8 @@ setInterval(function() {
   if (window.isProvided){  
     //window.web3.instance = web3.eth.contract(abi).at(contractAddress);
     //로그인시 새 메세지있나 확인.
-    /*
-    message.getMsg(function(e,r) {
+    
+    window.contractInstance.getMsg(function(e,r) {
 
         if(Number(blockNumber) != r[0]) {
 
@@ -20,7 +20,7 @@ setInterval(function() {
         }
 
     });
-*/
+
     if (document.getElementById('send_modal').style.visibility == "") {
 
       document.getElementById('send_modal').style.visibility = "visible";

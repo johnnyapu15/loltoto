@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
 setInterval(function(){
     if (loginBoolean){
             if (typeof web3.eth.accounts[0] !== 'undefined'){
-                window.web3.instance = web3.eth.contract(abi).at(contractAddress);
+                window.contractInstance = web3.eth.contract(abi).at(contractAddress);
                 window.account = web3.eth.accounts[0];
                 window.isProvided = true;
             }
