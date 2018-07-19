@@ -41,7 +41,7 @@ window.onload = function () {
               tournamentId = document.getElementById('tournament_id').value;
               alert("T_ID: " + tournamentId + ", team: " + this.value);
               document.getElementById('tournament_id').value = "";
-              this.parentNode.close();
+              //this.parentNode.close();
 
             // }
             // else {
