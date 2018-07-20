@@ -268,16 +268,15 @@ a {
 
     background:#4E8EE9;
 
-    width:70px;
-    height:70px;
+    width:130px;
+    height:130px;
 
     position:relative;
 
     top:55px;
-    left:70px;
+    left:185px;
 
     margin-top:-50px;
-    margin-left:-65px;
 
     border-radius:100%;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
@@ -373,5 +372,5 @@ a {
     background: white;
     border-radius: 5px;
     padding: 10px;
-    
+
 }
