@@ -17,8 +17,9 @@ window.onload = function () {
     //여기서 어떤 토너먼트를 선택했는지 저장해야한다.
     bettingModalBtns[i].addEventListener('click', function(e) {
     e.preventDefault();
-    document.getElementById("tournament_detail_box").innerHTML = "TEST!" + i;
-    document.getElementById('tournament_id').value = this.value;
+    //이 다음 문장에서 해당 경기의 자세한 정보를 불러와야한다. 서버사이드와 연계할 부분.
+    document.getElementById("match_detail_box").innerHTML = "TEST!" + this.value;
+    document.getElementById('match_id').value = this.value;
     bettingModal.showModal();
     });
   }

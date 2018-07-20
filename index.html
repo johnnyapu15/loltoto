@@ -23,44 +23,45 @@
         </div>
 
         <!-- 토너먼트 관련 -->
-        <div class="tournament_box">
-            <button class="betting_modal" value="tournament #1">
+        <!-- 여기서 각 버튼의 value를 matchId로 바꿔주면 될 것. -->
+        <div class="match_box">
+            <button class="betting_modal" value="UOS tournament #1 match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #2">
+            <button class="betting_modal" value="UOS tournament #2 match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #3">
+            <button class="betting_modal" value="UOS tournament #3 match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #4">
+            <button class="betting_modal" value="UOS tournament #4 match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #5 Semi Final">
+            <button class="betting_modal" value="UOS tournament #5 Semi Final match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #6 Semi Final">
+            <button class="betting_modal" value="UOS tournament #6 Semi Final match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
 
-            <button class="betting_modal" value="tournament #7 Final round">
+            <button class="betting_modal" value="UOS tournament #7 Final match">
                 <img id="betting_modal_img" src="svg/paper-plane.svg"/>
             </button>
         </div>
 
         <dialog id="betting_form">
-            <span id="betting_title">#TOURNAMENT DETAIL</span>
+            <span id="betting_title">#MATCH DETAIL</span>
             <button class="betting_form_close">
                 <img id="betting_form_close_img" src="svg/close.svg"/>
             </button>
-            <input id="tournament_id" type="text" placeholder="Tournament ID" maxlength="42">
-            <div id="tournament_detail_box" style="margin-top: 10px; height: 240px; background: aliceblue;">
-                Tournament_detail_data
+            <input id="match_id" type="text" placeholder="match ID" maxlength="42">
+            <div id="match_detail_box" style="margin-top: 10px; height: 240px; background: aliceblue;">
+                Match_detail_data
             </div>
             
             <button class="betting" value="team_a" style="top: 300px;left: 170px;">
