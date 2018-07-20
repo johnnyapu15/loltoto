@@ -1,7 +1,7 @@
 window.onload = function () {
 
   var bettingModalBtns = document.querySelectorAll('.betting_modal');
-  var tournamentId = 0;
+  var matchId = 0;
   var bettingBtns = document.querySelectorAll('.betting');
   var sendCloseBtns = document.querySelectorAll('.betting_form_close');
 
@@ -18,7 +18,7 @@ window.onload = function () {
     bettingModalBtns[i].addEventListener('click', function(e) {
     e.preventDefault();
     //이 다음 문장에서 해당 경기의 자세한 정보를 불러와야한다. 서버사이드와 연계할 부분.
-    document.getElementById("match_detail_box").innerHTML = "TEST!" + this.value;
+    document.getElementById("match_detail_box").innerHTML = "경기 정보<br> - matchId: " + this.value;
     document.getElementById('match_id').value = this.value;
     bettingModal.showModal();
     });
@@ -40,8 +40,8 @@ window.onload = function () {
               //   //alert("TXID Copy to clipboard: Ctrl+C, Enter\n" + r);
                 
               // });
-              tournamentId = document.getElementById('tournament_id').value;
-              alert("Betting ... T_ID: " + tournamentId + ", team: " + this.value);
+              matchId = document.getElementById('match_id').value;
+              alert("Betting ... T_ID: " + matchId + ", team: " + this.value);
               //document.getElementById('tournament_id').value = "";
               //ythis.parentNode.close();
 
