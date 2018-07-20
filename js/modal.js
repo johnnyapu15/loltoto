@@ -3,7 +3,7 @@ window.onload = function () {
   var bettingModalBtns = document.querySelectorAll('.betting_modal');
   var tournamentId = 0;
   var bettingBtns = document.querySelectorAll('.betting');
-  var sendCloseBtns = document.querySelectorAll('.send_form_close');
+  var sendCloseBtns = document.querySelectorAll('.betting_form_close');
 
   var receiveModalBtn = document.getElementById('receive_modal');
   var receiveCloseBtns = document.querySelectorAll('.receive_form_close');
