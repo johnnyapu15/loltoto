@@ -39,7 +39,7 @@ window.onload = function () {
                 
               // });
               tournamentId = document.getElementById('tournament_id').value;
-              alert("T_ID: " + tournamentId + ", team: " + this.value);
+              alert("Betting ... T_ID: " + tournamentId + ", team: " + this.value);
               //document.getElementById('tournament_id').value = "";
               //ythis.parentNode.close();
 

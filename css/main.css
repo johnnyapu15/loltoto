@@ -207,7 +207,7 @@ a {
     height:50px;
 
     border: none;
-    border-radius: 100%;
+    border-radius: 10%;
 
     bottom:2.5%;
     transform: translateX(-50%);
