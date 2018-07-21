@@ -10,16 +10,16 @@ setInterval(function() {
     //window.web3.instance = web3.eth.contract(abi).at(contractAddress);
     //로그인시 새 메세지있나 확인.
     
-    window.contractInstance.getMsg(function(e,r) {
+    // window.contractInstance.getMsg(function(e,r) {
 
-        if(Number(blockNumber) != r[0]) {
+    //     if(Number(blockNumber) != r[0]) {
 
-            document.getElementById('receive_new_img').style.display = "block";
-            blockNumber = r[0];
+    //         document.getElementById('receive_new_img').style.display = "block";
+    //         blockNumber = r[0];
 
-        }
+    //     }
 
-    });
+    // });
     var bettingModalBtns = document.querySelectorAll('.betting_modal');
 
     for (var i = 0; i < bettingModalBtns.length; i++){
