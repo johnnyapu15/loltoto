@@ -1,0 +1,28 @@
+{% extends "layout.html" %} 
+{% block body %}
+
+  <form class="f" lang="en" action="{{ url_for('unlocking') }}" method="post">
+    <dl>
+      <dt>ACCOUNT ID<br>
+      <input type=text name=account_id>
+      <br>
+      <dt>PASSWORD<br>
+      <input type="password" name=password><br>
+      <dt>
+
+      <input type="radio" name="isunlocking" value="1" checked="checked">UNLOCK
+      <br><input type="radio" name="isunlocking" value="0">LOCK
+      <br><br>
+      <button  type="submit" class="hrefText f" lang="en" style="background-color:inherit">SUBMIT</button>
+    </dl>
+  </form>
+
+  <form class="f" lang="en" action="{{ url_for('unlocking') }}" method="post">
+    <button  type="submit" class="hrefText f" lang="en" style="background-color:inherit">DRAW LIST</button>
+    <br><br>
+    
+    <a class="centered" style="text-align:justify;"> 이 화면은 추첨에 참여하기 위한 페이지입니다.
+       </a>
+    </form>
+
+{% endblock %}
